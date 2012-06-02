@@ -1,3 +1,6 @@
+# leftover SVN directories
+.svn/
+
 # built application files
 *.apk
 *.ap_

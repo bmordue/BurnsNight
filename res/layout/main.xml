@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.scotapps.burnsnight"
+
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- Place an AdMob ad at the top of the screen. -->
+	<!-- Ben's note: If it's at the bottom of the screen, it seems to clash with MediaController view-->
+	<!-- It has white text on a black background. -->
+	<com.admob.android.ads.AdView android:id="@+id/ad"
+		android:visibility="visible" android:layout_width="fill_parent"
+		android:layout_height="48dip" android:layout_alignParentTop="true"
+		app:backgroundColor="#000000" app:primaryTextColor="#FFFFFF"
+		app:secondaryTextColor="#CCCCCC"
+		app:keywords="Android app Robert Burns Night Scotland haggis whisky" />
+
+	<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="@string/hello"
+		android:layout_below="@id/ad" android:layout_centerHorizontal="true"
+		android:textSize="18sp" android:gravity="bottom"
+		/>
+
+
+	<ImageView android:id="@+id/ImageView01" android:src="@drawable/portrait"
+		android:background="@null"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@id/TextView01" />
+</RelativeLayout>
